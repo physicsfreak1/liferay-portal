@@ -640,6 +640,18 @@ $dockbarOpenGradientStart: #0EA6F9;
 		}
 	}
 
+	.table {
+		td {
+			vertical-align: middle;
+		}
+
+		td, th {
+			input[type="checkbox"] {
+				margin: 0 0 2px;
+			}
+		}
+	}
+
 	/* ---------- Vocabularies select box in sites categories ---------- */
 
 	.portlet-asset-category-admin {
