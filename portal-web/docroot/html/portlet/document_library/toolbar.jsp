@@ -94,13 +94,13 @@ Group scopeGroup = themeDisplay.getScopeGroup();
 	</aui:nav>
 
 	<div class="pull-right">
-		<span class="pull-left display-style-buttons-container" id="<portlet:namespace />displayStyleButtonsContainer">
+		<span class="display-style-buttons-container pull-left" id="<portlet:namespace />displayStyleButtonsContainer">
 			<c:if test='<%= !strutsAction.equals("/document_library/search") %>'>
 				<liferay-util:include page="/html/portlet/document_library/display_style_buttons.jsp" />
 			</c:if>
 		</span>
 
-		<div class="navbar-search pull-left">
+		<aui:nav-bar-search cssClass="pull-left">
 			<div class="form-search">
 				<liferay-portlet:resourceURL varImpl="searchURL">
 					<portlet:param name="struts_action" value="/document_library/search" />
@@ -123,7 +123,7 @@ Group scopeGroup = themeDisplay.getScopeGroup();
 					</div>
 				</aui:form>
 			</div>
-		</div>
+		</aui:nav-bar-search>
 	</div>
 </aui:nav-bar>
 

@@ -74,7 +74,7 @@ String strutsAction = ParamUtil.getString(request, "struts_action");
 	</aui:nav>
 
 	<div class="pull-right">
-		<span class="pull-left display-style-buttons-container" id="<portlet:namespace />displayStyleButtonsContainer">
+		<span class="display-style-buttons-container pull-left" id="<portlet:namespace />displayStyleButtonsContainer">
 			<c:if test='<%= !strutsAction.equals("/journal/search") %>'>
 				<liferay-util:include page="/html/portlet/journal/display_style_buttons.jsp" />
 			</c:if>
