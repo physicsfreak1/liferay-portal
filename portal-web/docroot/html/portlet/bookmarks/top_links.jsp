@@ -66,7 +66,7 @@ portletURL.setParameter("tag", StringPool.BLANK);
 			<portlet:param name="struts_action" value="/bookmarks/search" />
 		</liferay-portlet:renderURL>
 
-		<div class="navbar-search pull-right">
+		<aui:nav-bar-search cssClass="pull-right">
 			<div class="form-search">
 				<aui:form action="<%= searchURL %>" method="get" name="searchFm">
 					<liferay-portlet:renderURLParams varImpl="searchURL" />
@@ -81,7 +81,7 @@ portletURL.setParameter("tag", StringPool.BLANK);
 					</div>
 				</aui:form>
 			</div>
-		</div>
+		</aui:nav-bar-search>
 	</c:if>
 </aui:nav-bar>
 

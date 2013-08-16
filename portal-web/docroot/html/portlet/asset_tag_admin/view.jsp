@@ -42,11 +42,11 @@
 			</aui:nav-item>
 		</aui:nav>
 
-		<div class="navbar-search pull-right">
+		<aui:nav-bar-search cssClass="pull-right">
 			<div class="form-search">
 				<input class="search-query span9" id="<portlet:namespace/>tagsAdminSearchInput" name="<portlet:namespace/>tagsAdminSearchInput" type="text" />
 			</div>
-		</div>
+		</aui:nav-bar-search>
 	</aui:nav-bar>
 
 	<div class="tags-admin-container lfr-app-column-view">

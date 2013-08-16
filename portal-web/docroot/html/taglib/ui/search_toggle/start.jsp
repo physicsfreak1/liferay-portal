@@ -21,9 +21,7 @@
 		<div class="input-append" id="<%= id %>simple">
 			<input class="search-query span9" id="<%= id + displayTerms.KEYWORDS %>" name="<portlet:namespace /><%= displayTerms.KEYWORDS %>" placeholder="<liferay-ui:message key="keywords" />" type="text" value="<%= displayTerms.getKeywords() %>" />
 
-			<button class="btn" type="submit">
-				<%= LanguageUtil.get(pageContext, buttonLabel, "search") %>
-			</button>
+			<aui:button cssClass="btn" type="submit" value="search" />
 		</div>
 		<button class="btn-link" id="<%= id %>toggleAdvanced" type="button">
 			<i class="icon-cog"></i>

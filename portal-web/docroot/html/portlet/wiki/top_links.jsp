@@ -146,7 +146,7 @@ if (categoryId > 0) {
 			<portlet:param name="struts_action" value="/wiki/search" />
 		</liferay-portlet:renderURL>
 
-		<div class="navbar-search pull-right">
+		<aui:nav-bar-search cssClass="pull-right">
 			<div class="form-search">
 				<aui:form action="<%= searchURL %>" method="get" name="searchFm">
 					<liferay-portlet:renderURLParams varImpl="searchURL" />
@@ -160,7 +160,7 @@ if (categoryId > 0) {
 					</div>
 				</aui:form>
 			</div>
-		</div>
+		</aui:nav-bar-search>
 	</aui:nav-bar>
 
 	<c:if test="<%= windowState.equals(WindowState.MAXIMIZED) %>">
