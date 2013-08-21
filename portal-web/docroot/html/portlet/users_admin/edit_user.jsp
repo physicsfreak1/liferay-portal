@@ -278,10 +278,18 @@ if (selUser != null) {
 }
 %>
 
-<aui:script>
+<aui:script use='aui-base'>
 	function <portlet:namespace />createURL(href, value, onclick) {
 		return '<a href="' + href + '"' + (onclick ? ' onclick="' + onclick + '" ' : '') + '>' + value + '</a>';
 	};
+
+	A.one('#<portlet:namespace />tabs .form-navigator').delegate(
+		'click',
+		function(event) {
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
+		},
+		'li'
+	);
 </aui:script>
 
 <%!
