@@ -33,6 +33,22 @@
 				width: 200px;
 			}
 		}
+
+		.form-navigator-content {
+			margin-left: -5px;
+
+			.form-section {
+				width: 95%;
+
+				> * {
+					margin-left: 5px;
+				}
+
+				.control-label {
+					margin-left: 0;
+				}
+			}
+		}
 	}
 
 	#header-bottom {
