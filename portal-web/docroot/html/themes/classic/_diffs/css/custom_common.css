@@ -296,12 +296,21 @@
 
 			li.dropdown.user-avatar {
 				.dropdown-menu {
-					right: 0;
 					left: auto;
+					right: 0;
+					width: 100%;
 				}
 
 				.user-avatar-image {
 					width: 27px;
+				}
+
+				.user-full-name {
+					display: inline-block;
+					max-width: 150px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 				}
 			}
 		}
